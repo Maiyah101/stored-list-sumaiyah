@@ -1,8 +1,52 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: linear-gradient(135deg, #3b0764, #7e22ce, #c084fc);
+  color: white;
 }
 
-a {
-  color: #00B7FF;
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 25px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 35px;
+  animation: bounce 1.5s infinite;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.affirmation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.affirmation-list li {
+  background: rgba(255, 255, 255, 0.9);
+  color: #4c1d95;
+  margin: 18px 0;
+  padding: 20px;
+  border-radius: 18px;
+  font-size: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.affirmation-list li:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }

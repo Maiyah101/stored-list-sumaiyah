@@ -1,7 +1,9 @@
-<h1>Express</h1>
-<ul>
-{{#each list}}
-<li>{{this}}</li>
-{{/each}}
-</ul>
+<div class="page">
+  <h1>{{title}}</h1>
 
+  <ul class="affirmation-list">
+    {{#each list}}
+      <li>{{this.text}}</li>
+    {{/each}}
+  </ul>
+</div>
